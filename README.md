@@ -1,2 +1,2 @@
 # ganeev-bachelors-work
-[![Binder](https://github.com/SergeyVostokin/ganeev-bachelors-work.git/master?urlpath=lab)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/SergeyVostokin/ganeev-bachelors-work.git/master?urlpath=lab)
