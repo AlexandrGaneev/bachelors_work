@@ -4,22 +4,9 @@
   with(DEtools):
   with(linalg):
   
-  f:=fopen("rho.txt", READ):
-  r:=fscanf(f,"%f"):
-  r:=r[1];
-  fclose(f):
- 
-  f:=fopen("sigma.txt", READ):
-  sigma_:=fscanf(f,"%f"):
-  sigma_:=sigma_[1];
-  fclose(f):
- 
-  f:=fopen("beta.txt", READ):
-  b:=fscanf(f,"%f"):
-  b:=b[1];
-  fclose(f):
-  
+  r:= 28.0 :  sigma_ := 10.0  :  b:= 2.66666 :  
   eps:=0.0:omeg:=100:fluc1:=t->1:
+ 
  fluc2:=t->1:
  fluc3:=t->1:
  ur1:=diff(x(t),t)=-sigma_*(x(t)-y(t))/fluc1(t):
@@ -74,16 +61,4 @@
  
  LAP1[Num_of_steps];LAP2[Num_of_steps];LAP3[Num_of_steps];
  
- f:=fopen("lap1.txt", WRITE):
- fprintf(f,"%f",LAP1[Num_of_steps]):
- fclose(f):
- 
- f:=fopen("lap2.txt", WRITE):
- fprintf(f,"%f",LAP2[Num_of_steps]):
- fclose(f):
- 
- f:=fopen("lap3.txt", WRITE):
- fprintf(f,"%f",LAP3[Num_of_steps]):
- fclose(f):
-
  quit:
